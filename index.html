@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DriveOn | Alugue seu próximo carro</title>
+  <meta name="description" content="Encontre o carro ideal para sua próxima viagem com a DriveOn.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="css/style.css?v=20261102-hero-clean" rel="stylesheet">
+</head>
+<body class="home-page">
+  <nav class="navbar navbar-expand-lg navbar-dark site-nav">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html"><span class="brand-mark">D</span> drive<span>on</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navDrive" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navDrive">
+        <ul class="navbar-nav mx-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#frota">Nossos veículos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vantagens">Por que DriveOn?</a></li>
+        </ul>
+        <a class="btn btn-nav" href="#acesso" data-modo="entrar">Entrar <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="container hero-content">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span> SUA PRÓXIMA JORNADA COMEÇA AQUI</span>
+        <h1>O caminho é seu.<br><span>O carro também.</span></h1>
+        <p>Liberdade para ir mais longe. Encontre o veículo ideal para seus planos e faça sua solicitação de aluguel em poucos passos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-accent btn-lg" href="#frota">Explorar veículos <span>→</span></a>
+          <a class="text-link" href="#vantagens">Conheça a DriveOn</a>
+        </div>
+        <div class="hero-proof"><div class="proof-avatars"><span>✓</span><span>✓</span><span>✓</span></div><small>Uma experiência simples, do pedido ao contrato.</small></div>
+      </div>
+    </div>
+    <div class="hero-scroll"><span></span> DESCUBRA A FROTA</div>
+  </header>
+
+  <section class="search-wrap" aria-label="Busca de veículos">
+    <div class="container">
+      <form id="buscaVeiculos" class="search-panel">
+        <div class="search-field"><label for="buscaModelo">O que você procura?</label><div class="field-value"><span class="field-icon">⌕</span><input id="buscaModelo" type="search" placeholder="Marca ou modelo"></div></div>
+        <div class="search-field"><label for="dataInicio">Retirada</label><div class="field-value"><span class="field-icon">▦</span><input id="dataInicio" type="date"></div></div>
+        <div class="search-field"><label for="dataFim">Devolução</label><div class="field-value"><span class="field-icon">▦</span><input id="dataFim" type="date"></div></div>
+        <button class="btn btn-accent search-button" type="submit">Buscar carros <span>→</span></button>
+      </form>
+    </div>
+  </section>
+
+  <main>
+    <section class="fleet-section section-pad" id="frota">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow dark-eyebrow">ESCOLHA SEU PRÓXIMO CARRO</span><h2>Encontre o seu <span>match.</span></h2><p>Opções para cada caminho, ocasião e estilo de viagem.</p></div>
+          <span class="fleet-count" id="contadorVeiculos">Frota disponível</span>
+        </div>
+        <div id="avisosHome"></div>
+        <div class="row g-4" id="listaVeiculos">
+          <div class="col-12"><div class="loading-card">Carregando nossa frota...</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-section section-pad" id="vantagens">
+      <div class="container">
+        <div class="section-heading light-heading"><div><span class="eyebrow">FEITO PARA FACILITAR</span><h2>Alugar deve ser <span>simples.</span></h2></div></div>
+        <div class="row g-4">
+          <div class="col-md-4"><article class="benefit-card"><span class="benefit-number">01</span><div class="benefit-icon">⌁</div><h3>Escolha sem complicação</h3><p>Explore os veículos e encontre aquele que combina com seu próximo destino.</p></article></div>
+          <div class="col-md-4"><article class="benefit-card"><span class="benefit-number">02</span><div class="benefit-icon">◷</div><h3>Acompanhe seu pedido</h3><p>Consulte o status da sua solicitação em sua área de cliente.</p></article></div>
+          <div class="col-md-4"><article class="benefit-card"><span class="benefit-number">03</span><div class="benefit-icon">↗</div><h3>Processo transparente</h3><p>Pedidos passam por análise antes da formalização do contrato.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section"><div class="container cta-box"><div><span class="eyebrow dark-eyebrow">VAMOS NESSA?</span><h2>Seu próximo capítulo<br>começa <span>na estrada.</span></h2></div><a href="#acesso" data-modo="cadastro" class="btn btn-dark-cta">Criar minha conta <span>→</span></a></div></section>
+
+    <section class="access-section section-pad" id="acesso"><div class="container access-container"><div class="access-intro"><span class="eyebrow dark-eyebrow">ÁREA DO CLIENTE E AGENTES</span><h2>Entre para<br><span>seguir viagem.</span></h2><p>Faça login ou crie uma conta para solicitar e acompanhar aluguéis.</p></div>
+      <div class="access-card"><div id="avisos"></div><ul class="nav nav-pills access-tabs mb-4"><li class="nav-item"><button class="nav-link active" data-modo="entrar" type="button">Entrar</button></li><li class="nav-item"><button class="nav-link" data-modo="cadastro" type="button">Criar conta</button></li></ul>
+        <form id="formEntrar"><div class="mb-3"><label class="form-label" for="eEmail">E-mail</label><input id="eEmail" type="email" class="form-control" placeholder="voce@email.com" required></div><div class="mb-4"><label class="form-label" for="eSenha">Senha</label><input id="eSenha" type="password" class="form-control" placeholder="Sua senha" required></div><button class="btn btn-accent w-100">Entrar na conta <span>→</span></button></form>
+        <form id="formCadastro" class="d-none"><div class="row g-3"><div class="col-12"><label class="form-label" for="cTipo">Tipo de conta</label><select id="cTipo" class="form-select"><option value="cliente">Cliente</option><option value="empresa">Empresa (agente)</option><option value="banco">Banco (agente)</option></select></div><div class="col-12"><label class="form-label" for="cNome">Nome</label><input id="cNome" class="form-control" required></div><div class="col-md-6"><label class="form-label" for="cEmail">E-mail</label><input id="cEmail" type="email" class="form-control" required></div><div class="col-md-6"><label class="form-label" for="cSenha">Senha</label><input id="cSenha" type="password" minlength="3" class="form-control" required></div></div>
+          <div id="camposCliente" class="row g-3 mt-0"><div class="col-md-6"><label class="form-label" for="cCpf">CPF</label><input id="cCpf" class="form-control" inputmode="numeric" placeholder="Só números"></div><div class="col-md-6"><label class="form-label" for="cRg">RG</label><input id="cRg" class="form-control"></div><div class="col-12"><label class="form-label" for="cEnd">Endereço</label><input id="cEnd" class="form-control"></div><div class="col-12"><label class="form-label" for="cProf">Profissão</label><input id="cProf" class="form-control"></div><div class="col-12"><label class="form-label">Rendimentos (até 3)</label><div id="rendas"></div><button type="button" id="addRenda" class="btn btn-sm btn-outline-primary">+ Adicionar rendimento</button></div></div><button class="btn btn-accent w-100 mt-4">Criar conta <span>→</span></button></form>
+      </div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="navbar-brand brand" href="#inicio"><span class="brand-mark">D</span> drive<span>on</span></a><p>Seu caminho. Suas escolhas. DriveOn.</p><small>© 2026 DriveOn — Projeto acadêmico de DIW.</small></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/api.js"></script><script src="js/auth.js"></script><script src="js/home.js"></script>
+</body></html>

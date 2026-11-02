@@ -1,0 +1,44 @@
+<!doctype html><html lang="pt-BR"><head><title>Meus pedidos</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="css/style.css?v=20261102-profile2" rel="stylesheet"></head><body class="client-dashboard">
+<header class="topo"><div class="container py-3 d-flex justify-content-between align-items-center">
+  <a class="dashboard-brand" href="frota.html"><span class="brand-mark">D</span> DriveOn</a>
+  <div class="dashboard-account"><a class="catalog-link" href="frota.html"><span aria-hidden="true">←</span> Ver carros</a><span class="account-avatar" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c.6-4.1 3.1-6.2 7.5-6.2s6.9 2.1 7.5 6.2"/></svg></span><span id="quem" class="account-name"></span><button class="btn btn-link" onclick="sessao.sair()">Sair <span aria-hidden="true">↗</span></button></div></div></header>
+<main class="container py-4">
+  <div id="avisos"></div>
+  <section class="dashboard-heading"><div><span class="eyebrow dark-eyebrow">ÁREA DO CLIENTE</span><h1>Olá, <span id="saudacaoCliente">cliente</span></h1><p>Acompanhe seus pedidos e mantenha seus dados prontos para as próximas viagens.</p></div><button class="btn btn-primary" id="novo"><span aria-hidden="true">＋</span> Novo pedido</button></section>
+  <div class="row g-4 dashboard-layout">
+    <section class="col-lg-7 dashboard-section">
+      <div class="section-title"><div><span class="section-kicker">ACOMPANHAMENTO</span><h2>Meus pedidos</h2></div><span id="contagemPedidos" class="dashboard-count">0 pedidos</span></div>
+      <div id="lista" class="dashboard-list"></div>
+    </section>
+    <section class="col-lg-5 dashboard-section"><div class="painel profile-panel">
+      <div class="section-title"><div><span class="section-kicker">PERFIL E CADASTRO</span><h2>Seus dados</h2><p class="profile-intro">Mantenha suas informações atualizadas para agilizar a análise dos pedidos.</p></div><span class="profile-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c.6-4.1 3.1-6.2 7.5-6.2s6.9 2.1 7.5 6.2"/></svg></span></div>
+      <form id="formDados" class="row g-3">
+        <div class="col-12 profile-field"><label class="form-label" for="dNome">Nome completo</label><input id="dNome" class="form-control" autocomplete="name" required></div>
+        <div class="col-sm-6 profile-field"><label class="form-label" for="dCpf">CPF</label><input id="dCpf" class="form-control" inputmode="numeric" autocomplete="off" required></div>
+        <div class="col-sm-6 profile-field"><label class="form-label" for="dRg">RG</label><input id="dRg" class="form-control" autocomplete="off" required></div>
+        <div class="col-12 profile-field"><label class="form-label" for="dEnd">Endereço</label><input id="dEnd" class="form-control" autocomplete="street-address" required></div>
+        <div class="col-12 profile-field"><label class="form-label" for="dProf">Profissão</label><input id="dProf" class="form-control" autocomplete="organization-title" required></div>
+        <div class="col-12 profile-income"><div class="income-heading"><div><label class="form-label mb-1">Rendimentos</label><small>Informe até 3 fontes de renda.</small></div><span class="income-count">Até 3</span></div><div id="rendas"></div>
+          <button type="button" id="addRenda" class="btn btn-sm btn-outline-primary"><span aria-hidden="true">＋</span> Adicionar rendimento</button></div>
+        <div class="col-12 profile-actions"><button class="btn btn-primary"><span aria-hidden="true">✓</span> Salvar alterações</button></div>
+        <div class="col-12"><div class="profile-danger-zone"><div><strong>Excluir conta</strong><small>Essa ação remove seus dados e pedidos.</small></div><button type="button" id="excluir" class="btn btn-outline-danger">Excluir</button></div></div>
+      </form></div></section>
+  </div>
+</main>
+<div class="modal fade" id="modalPedido" tabindex="-1"><div class="modal-dialog"><form class="modal-content" id="formPedido">
+  <div class="modal-header"><h3 class="modal-title fs-4" id="tituloPedido">Novo pedido</h3><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button></div>
+  <div class="modal-body row g-3">
+    <div class="col-12"><label class="form-label" for="pAuto">Carro</label><select id="pAuto" class="form-select" required></select></div>
+    <div class="col-6"><label class="form-label" for="pIni">Retirada</label><input id="pIni" type="date" class="form-control" required></div>
+    <div class="col-6"><label class="form-label" for="pFim">Devolução</label><input id="pFim" type="date" class="form-control" required></div>
+    <div class="col-12"><label class="form-label" for="pBanco">Contrato de crédito</label><select id="pBanco" class="form-select"></select></div>
+  </div>
+  <div class="modal-footer"><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Voltar</button><button class="btn btn-primary">Salvar pedido</button></div>
+</form></div></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/api.js?v=20261102-profile2"></script>
+<script src="js/cliente.js?v=20261102-profile2"></script></body></html>

@@ -1,0 +1,243 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Banco Alvorada",
+      "email": "banco@alvorada.com",
+      "senha": "123",
+      "tipo": "banco"
+    },
+    {
+      "id": 2,
+      "nome": "Locadora Três Marias",
+      "email": "contato@tresmarias.com",
+      "senha": "123",
+      "tipo": "empresa"
+    },
+    {
+      "id": 3,
+      "nome": "Marcos Teixeira",
+      "email": "marcos@email.com",
+      "senha": "123",
+      "tipo": "cliente"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "usuarioId": 3,
+      "nome": "Marcos Teixeira",
+      "cpf": "11122233344",
+      "rg": "MG1234567",
+      "endereco": "Rua dos Carijós, 120, Belo Horizonte",
+      "profissao": "Técnico em eletrônica",
+      "rendimentos": [
+        {
+          "empregador": "Eletro Minas",
+          "valor": 4200
+        }
+      ]
+    }
+  ],
+  "automoveis": [
+    {
+      "id": 1,
+      "matricula": "MAT-0001",
+      "ano": 2022,
+      "marca": "Fiat",
+      "modelo": "Argo 1.0",
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/FIAT_Argo.jpg/960px-FIAT_Argo.jpg",
+      "imagemAutor": "NicolasRNphoto",
+      "imagemLicenca": "CC BY-SA 4.0",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:FIAT_Argo.jpg",
+      "placa": "RIO2A34",
+      "proprietario": "empresa",
+      "proprietarioNome": "Locadora Três Marias",
+      "disponivel": false
+    },
+    {
+      "id": 2,
+      "matricula": "MAT-0002",
+      "ano": 2023,
+      "marca": "Chevrolet",
+      "modelo": "Onix Plus",
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/2021_Chevrolet_Onix_Plus_1.2_LT.jpg/960px-2021_Chevrolet_Onix_Plus_1.2_LT.jpg",
+      "imagemAutor": "Just_a_Man",
+      "imagemLicenca": "CC BY 4.0",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:2021_Chevrolet_Onix_Plus_1.2_LT.jpg",
+      "placa": "QWE4F56",
+      "proprietario": "empresa",
+      "proprietarioNome": "Locadora Três Marias",
+      "disponivel": true
+    },
+    {
+      "id": 3,
+      "matricula": "MAT-0003",
+      "ano": 2021,
+      "marca": "Volkswagen",
+      "modelo": "T-Cross",
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Volkswagen_T-Cross_1X7A0363.jpg/960px-Volkswagen_T-Cross_1X7A0363.jpg",
+      "imagemAutor": "Alexander Migl",
+      "imagemLicenca": "CC BY-SA 4.0",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:Volkswagen_T-Cross_1X7A0363.jpg",
+      "placa": "BHZ7C89",
+      "proprietario": "banco",
+      "proprietarioId": 1,
+      "disponivel": true
+    },
+    {
+      "id": 4,
+      "matricula": "MAT-0004",
+      "ano": 2024,
+      "marca": "Hyundai",
+      "modelo": "HB20",
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Hyundai_HB20_Unique_2019.jpg/960px-Hyundai_HB20_Unique_2019.jpg",
+      "imagemAutor": "Leandroazc",
+      "imagemLicenca": "CC BY-SA 4.0",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:Hyundai_HB20_Unique_2019.jpg",
+      "placa": "MGB1D23",
+      "proprietario": "cliente",
+      "proprietarioClienteId": 1,
+      "disponivel": true
+    },
+    {
+      "id": 5,
+      "matricula": "MAT-0005",
+      "ano": 2022,
+      "marca": "Renault",
+      "modelo": "Kwid Zen 1.0",
+      "placa": "ABC1E25",
+      "proprietario": "empresa",
+      "proprietarioNome": "Locadora Três Marias",
+      "disponivel": true,
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Renault_Kwid_1.0_Zen_%282022%29_%2852716172750%29.jpg/960px-Renault_Kwid_1.0_Zen_%282022%29_%2852716172750%29.jpg",
+      "imagemAutor": "Charles",
+      "imagemLicenca": "CC BY 2.0",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:Renault_Kwid_1.0_Zen_(2022)_(52716172750).jpg"
+    },
+    {
+      "id": 6,
+      "matricula": "MAT-0006",
+      "ano": 2021,
+      "marca": "Fiat",
+      "modelo": "Mobi Like 1.0",
+      "placa": "DEF2G36",
+      "proprietario": "empresa",
+      "proprietarioNome": "Locadora Três Marias",
+      "disponivel": true,
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Fiat_Mobi_1.0_Like_2021.jpg/960px-Fiat_Mobi_1.0_Like_2021.jpg",
+      "imagemAutor": "RL GNZLZ",
+      "imagemLicenca": "CC BY-SA 2.0",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:Fiat_Mobi_1.0_Like_2021.jpg"
+    },
+    {
+      "id": 7,
+      "matricula": "MAT-0007",
+      "ano": 2023,
+      "marca": "Chevrolet",
+      "modelo": "Tracker Premier 1.2",
+      "placa": "GHI3J47",
+      "proprietario": "empresa",
+      "proprietarioNome": "Locadora Três Marias",
+      "disponivel": true,
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/2023_Chevrolet_Tracker_1.2_Premier.jpg/960px-2023_Chevrolet_Tracker_1.2_Premier.jpg",
+      "imagemAutor": "Maxi-Napo-99",
+      "imagemLicenca": "CC BY 4.0",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:2023_Chevrolet_Tracker_1.2_Premier.jpg"
+    },
+    {
+      "id": 8,
+      "matricula": "MAT-0008",
+      "ano": 2022,
+      "marca": "Honda",
+      "modelo": "Civic",
+      "placa": "JKL4M58",
+      "proprietario": "empresa",
+      "proprietarioNome": "Locadora Três Marias",
+      "disponivel": true,
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/%2722_Honda_Civic.jpg/960px-%2722_Honda_Civic.jpg",
+      "imagemAutor": "Bull-Doser",
+      "imagemLicenca": "Domínio público",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:%2722_Honda_Civic.jpg"
+    },
+    {
+      "id": 9,
+      "matricula": "MAT-0009",
+      "ano": 2022,
+      "marca": "Honda",
+      "modelo": "HR-V 1.5",
+      "placa": "NOP5Q69",
+      "proprietario": "empresa",
+      "proprietarioNome": "Locadora Três Marias",
+      "disponivel": true,
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/2022_Honda_HR-V_1.5_SE_RV3_%2820220807%29.jpg/960px-2022_Honda_HR-V_1.5_SE_RV3_%2820220807%29.jpg",
+      "imagemAutor": "オーバードライブ83",
+      "imagemLicenca": "CC BY-SA 4.0",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:2022_Honda_HR-V_1.5_SE_RV3_(20220807).jpg"
+    },
+    {
+      "id": 10,
+      "matricula": "MAT-0010",
+      "ano": 2021,
+      "marca": "Nissan",
+      "modelo": "Kicks",
+      "placa": "RST6U70",
+      "proprietario": "empresa",
+      "proprietarioNome": "Locadora Três Marias",
+      "disponivel": true,
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Nissan_Kicks.jpg/960px-Nissan_Kicks.jpg",
+      "imagemAutor": "RL GNZLZ",
+      "imagemLicenca": "CC BY-SA 2.0",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:Nissan_Kicks.jpg"
+    },
+    {
+      "id": 11,
+      "matricula": "MAT-0011",
+      "ano": 2021,
+      "marca": "Jeep",
+      "modelo": "Renegade",
+      "placa": "VWX7Y81",
+      "proprietario": "empresa",
+      "proprietarioNome": "Locadora Três Marias",
+      "disponivel": true,
+      "imagem": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Jeep_Renegade.jpg/960px-Jeep_Renegade.jpg",
+      "imagemAutor": "Reise Reise",
+      "imagemLicenca": "CC BY-SA 4.0",
+      "imagemFonte": "https://commons.wikimedia.org/wiki/File:Jeep_Renegade.jpg"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "clienteId": 1,
+      "automovelId": 1,
+      "dataInicio": "2026-11-10",
+      "dataFim": "2026-11-17",
+      "bancoSolicitadoId": 1,
+      "bancoId": null,
+      "status": "Contratado",
+      "parecer": "teste",
+      "avaliadoPor": "Locadora Três Marias",
+      "creditoConcedidoPor": "",
+      "avaliadoEm": "2026-11-02T19:29:56.552Z",
+      "contratoId": 1
+    }
+  ],
+  "contratos": [
+    {
+      "pedidoId": 1,
+      "clienteId": 1,
+      "automovelId": 1,
+      "bancoId": null,
+      "numero": "DRV-47804668",
+      "dataEmissao": "2026-11-02",
+      "dataInicio": "2026-11-10",
+      "dataFim": "2026-11-17",
+      "status": "Ativo",
+      "proprietario": "empresa",
+      "clienteNome": "Marcos Teixeira",
+      "automovelDescricao": "Fiat Argo 1.0 2022",
+      "id": 1
+    }
+  ]
+}

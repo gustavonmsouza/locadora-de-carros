@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 76" role="img" aria-labelledby="title desc">
+  <title id="title">DriveOn</title>
+  <desc id="desc">Marca DriveOn com um D verde-limão e letras azul-marinho.</desc>
+  <rect x="2" y="2" width="72" height="72" rx="20" fill="#c7f36b"/>
+  <path d="M23 18h13c14 0 23 8 23 20S50 58 36 58H23V18zm13 30c8 0 13-4 13-10s-5-10-13-10h-3v20h3z" fill="#101b2d"/>
+  <text x="92" y="53" font-family="Manrope,Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="-2" fill="#101b2d">drive</text>
+  <text x="208" y="53" font-family="Manrope,Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="-2" fill="#769d2c">on</text>
+</svg>
